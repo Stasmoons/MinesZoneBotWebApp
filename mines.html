@@ -603,7 +603,7 @@
             // Функция для взрыва квадратов
             function triggerExplosion() {
                 const squares = $('.square');
-                const audio = new Audio('./static/startest.mp3'); // Путь к вашему звуку
+                // const audio = new Audio('./static/startest.mp3'); // Путь к вашему звуку
                 let starCount;
                 switch (trapCount) {
                     case 1:
@@ -624,8 +624,8 @@
 
                 randomIndexes.forEach((index, i) => {
                     setTimeout(function() {
-                        audio.currentTime = 0; // Перематываем звук на начало
-                        audio.play(); // Воспроизводим звук
+                        // audio.currentTime = 0; // Перематываем звук на начало
+                        // audio.play(); // Воспроизводим звук
                         $(squares[index]).explode({
                             radius: 100,
                             minRadius: 20,
